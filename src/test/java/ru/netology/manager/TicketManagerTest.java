@@ -49,7 +49,7 @@ class TicketManagerTest {
     @Test
     public void shouldSearchFlightFromSvoToVvo() {
         Ticket[] actual = manager.searchBy("SVO", "VVO");
-        Ticket[] expected = new Ticket[]{eights, sixth, fourth};
+        Ticket[] expected = new Ticket[]{seventh, eights, sixth, fourth};
         assertArrayEquals(expected, actual);
     }
 
